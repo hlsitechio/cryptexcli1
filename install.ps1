@@ -11,9 +11,9 @@ function Test-Command($cmd) {
     }
 }
 
-Check-Command "git"
-Check-Command "node"
-Check-Command "npm"
+Test-Command "git"
+Test-Command "node"
+Test-Command "npm"
 
 # Set npm prefix and update PATH
 $npmPrefix = Join-Path $env:USERPROFILE ".npm-packages"
