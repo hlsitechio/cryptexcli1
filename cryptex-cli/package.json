@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "type": "module",
   "bin": {
-    "cryptex": "bin/cryptex.js"
+    "cryptex": "./bin/cryptex.js"
   },
   "scripts": {
     "dev": "node src/index.js",
     "test": "vitest",
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "postinstall": "npm link"
   },
   "dependencies": {
     "commander": "^11.0.0",
