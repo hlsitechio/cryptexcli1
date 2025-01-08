@@ -17,7 +17,7 @@ try {
 # Install package globally
 Write-Host "🔮 Installing Cryptex..."
 try {
-    npm install -g git+https://github.com/hlsitechio/cryptexcli1.git
+    npm install -g cryptex-cli
 } catch {
     Write-Host "❌ Failed to install Cryptex: $_"
     exit 1

@@ -1,19 +1,14 @@
 {
   "name": "cryptex-cli",
   "version": "1.0.0",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hlsitechio/cryptexcli1.git"
-  },
   "type": "module",
   "bin": {
-    "cryptex": "./bin/cryptex.js"
+    "cryptex": "bin/cryptex.js"
   },
   "scripts": {
     "dev": "node src/index.js",
     "test": "vitest",
-    "build": "node scripts/build.js",
-    "postinstall": "chmod +x ./bin/cryptex.js"
+    "build": "node scripts/build.js"
   },
   "dependencies": {
     "commander": "^11.0.0",
